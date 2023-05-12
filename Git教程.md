@@ -219,3 +219,14 @@ ssh-keygen -t rsa
 7. 确认无误后点击“Add SSH key”
 
 那么SSH key就配置好了!
+
+#### 创建自己的Github仓库
+1. 进入[Github主页](https://github.com/),点击左上角“New”![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305130115069.png)
+
+2. 在“Repository name”中输入自己的仓库名字（随意），例如：git_learn
+3. 在“Description”中输入对自己这个仓库的介绍，例如：This is my learning of git
+4. 点击”Create repository“以创建仓库![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305130122537.png)
+
+其他的几个地方都十分简单可以自行研究一下Github，多创建几个仓库试试，把每个选项的功能弄明白。
+
+### Git与Pycharm联调（全网独家，最详细）
