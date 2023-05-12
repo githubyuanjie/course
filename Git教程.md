@@ -195,3 +195,27 @@ git clone https://github.com/githubyuanjie/course.git
 ```
 ![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305122349017.png)
 克隆完成后可以看到**对应的文件名**出现在工作目录.
+
+#### 配置SSH公钥
+
+##### 什么是SSH公钥？
+简单来说，SSH公钥就像是一个人的指纹，它是独一无二的，用于安全地**验证和授权**远程SSH（Secure Shell）客户端访问远程服务器或计算机系统.
+配置了SSH公钥之后，我们就可以做到免密码登录等等。
+
+##### 获取Github的SSH公钥
+1. 在任意目录打开Git，输入：
+```
+ssh-keygen -t rsa
+```
+然后**一路回车**,切记不要输入任何信息!
+2. 进入系统盘的用户文件夹中的.ssh文件夹，例如C:|Users|JSxhq|.ssh.查看是否生成了两个文件
+![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305130044198.png)
+3. 进入Github设置公钥界面
+4. 点击“New SSH key”
+![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305130032247.png)
+5. 将.ssh中带.pub后缀的文件用记事本打开，并复制所有内容。
+6. 粘贴复制内容到"Key”，“title”处填写最后一个等号后面的标识符。如JSxhq@DESKTOP-HA490KS.
+![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305130051730.png)
+7. 确认无误后点击“Add SSH key”
+
+那么SSH key就配置好了!
