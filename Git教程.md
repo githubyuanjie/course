@@ -230,3 +230,38 @@ ssh-keygen -t rsa
 其他的几个地方都十分简单可以自行研究一下Github，多创建几个仓库试试，把每个选项的功能弄明白。
 
 ### Git与Pycharm联调（全网独家，最详细）
+#### Pycharm中Git对接
+1. 把自己的个人远程仓库克隆到Git工作区![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131259351.png)
+2. 在Pycharm中新建一个项目（*作为克隆仓库的映射*）![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131301161.png)
+3. 输入**新项目目录**（*需要是一个没有的或者空的文件夹*）即可，点击创建”*Create*“![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131306658.png)
+4. 接下来的弹窗都选择蓝色选项即可![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131309151.png)
+在**打开项目**中可以把不在询问勾上
+5. 可以看到有两个Pycharm工作区有两个文件夹
+* 刚刚创建的空文件夹
+* 之前克隆的仓库文件夹
+![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131312038.png)
+6. 在文件管理器中，把克隆仓库中的所有文件**剪切**（*Ctrl＋X*）到新建的项目文件夹中!
+7. 会有*无效VCS根映射*通知弹出，点击配置![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131339001.png)
+8. 右键错误根，点击上方*铅笔*进行修改，把目录改为*刚刚创建的项目目录*，然后确认![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131343324.png)
+
+这样一来就对接成功了!😎
+
+#### Pycharm中Git的基本用法
+
+对接成功后，我们就可以在Pycharm中随意修改信息了。
+* git add
+	因为Pycharm中提供了傻瓜操作，所以要将文件添加到暂存区，只需要对着目标文件
+	”**Ctrl+Alt+A**“即可!
+	如果有键位冲突，也可以右键目标文件，在*Git*栏中**添加**![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305131401476.png)
+	添加后文件颜色会随着文件状态的改变而改变
+* git commit
+	同理，只需要对着目标文件
+	”**Ctrl+K**“即可!
+	也可以右键目标文件，在*Git*栏中**提交**
+	![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305192311820.png)
+	然后在提交栏中填写**提交注释**（必须）即可提交.若不用再继续做版本修改就可以选择**提交并推送**
+	![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305192317838.png)
+* git push
+	同理，git push没有其他额外需要补充的操作，此处就不详细说明了.
+
+回到自己的GitHub仓库即可发现已经更新成功![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305192322313.png)
