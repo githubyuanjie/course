@@ -264,4 +264,4 @@ ssh-keygen -t rsa
 * git push
 	同理，git push没有其他额外需要补充的操作，此处就不详细说明了.
 
-回到自己的GitHub仓库即可发现已经更新成功![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305192322313.png)
+回到自己的GitHub仓库即可发现已经更新成功了![](https://cdn.staticaly.com/gh/githubyuanjie/personal-photo-house@master/img/202305192322313.png)
